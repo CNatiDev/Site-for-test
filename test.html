@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site cu Butoane</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="button-container">
+    <button class="button" onclick="afiseazaMesaj('Butonul 1 apăsat')">Butonul 1</button>
+    <button class="button" onclick="afiseazaMesaj('Butonul 2 apăsat')">Butonul 2</button>
+    <button class="button" onclick="afiseazaMesaj('Butonul 3 apăsat')">Butonul 3</button>
+    <button class="button" onclick="afiseazaMesaj('Butonul 4 apăsat')">Butonul 4</button>
+</div>
+
+<script>
+    function afiseazaMesaj(mesaj) {
+        alert(mesaj);
+    }
+</script>
+
+</body>
+</html>
